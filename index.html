@@ -1,13 +1,73 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>what-is-graphics</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Что такое графика?</title>
+  <meta name="description" content="Интерактивное путешествие в мир графики" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Сцена 0: Прелоадер -->
+  <div id="preloader" class="scene scene--preloader">
+    <div class="container">
+      <p class="preloader__text">Графика начинается с точки.</p>
+    </div>
+  </div>
+
+  <!-- Сцена 1: Введение -->
+  <section id="intro" class="scene scene--intro">
+    <div class="container">
+      <h1 class="intro__title">Графика — это язык.</h1>
+      <p class="intro__subtitle">Она говорит без слов.</p>
+    </div>
+  </section>
+
+  <!-- Сцена 2: Пиксель -->
+  <section id="pixel" class="scene scene--pixel">
+    <div class="container">
+      <h2 class="pixel__title">Пиксель</h2>
+      <p class="pixel__text">Из тысяч точек рождается картинка.</p>
+    </div>
+  </section>
+
+  <!-- Сцена 3: Вектор -->
+  <section id="vector" class="scene scene--vector">
+    <div class="container">
+      <h2 class="vector__title">Вектор</h2>
+      <p class="vector__text">Вектор не состоит из точек. Он состоит из формул.</p>
+    </div>
+  </section>
+
+  <!-- Сцена 4: Цвет -->
+  <section id="color" class="scene scene--color">
+    <div class="container">
+      <h2 class="color__title">Цвет</h2>
+      <p class="color__text">Цвет — это не украшение. Это эмоция.</p>
+    </div>
+  </section>
+
+  <!-- Сцена 5: Движение -->
+  <section id="motion" class="scene scene--motion">
+    <div class="container">
+      <h2 class="motion__title">Движение</h2>
+      <p class="motion__text">Графика, которая движется, — это анимация.</p>
+    </div>
+  </section>
+
+  <!-- Сцена 6: Финал -->
+  <section id="final" class="scene scene--final">
+    <div class="container">
+      <h2 class="final__title">Теперь ты видишь графику.</h2>
+      <p class="final__text">Спасибо, что уделили внимание.</p>
+    </div>
+  </section>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
 </html>

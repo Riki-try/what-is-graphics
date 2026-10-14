@@ -1,0 +1,40 @@
+/* src/styles/variables.css */
+
+:root {
+  /* ===== Цвета: неон + уют ===== */
+  --bg-deep: #0a0a44;
+  --bg-purple: #170a27;
+  --bg-gradient: radial-gradient(circle at 50% 50%, #1a0b2e 0%, #0a0a1a 100%);
+
+  --neon-purple: #b026ff;
+  --neon-cyan: #00e5ff;
+  --neon-gold: #ffb86c;
+  --neon-pink: #ff4dcb;
+
+  --text-main: #f5f0ff;
+  --text-muted: #a39cb3;
+
+  /* ===== Шрифты ===== */
+  --font-display: 'Playfair Display', serif;
+  --font-body: 'Inter', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  /* ===== Отступы ===== */
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 2rem;
+  --space-lg: 4rem;
+  --space-xl: 8rem;
+
+  /* ===== Размеры текста ===== */
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.25rem;
+  --text-xl: 2rem;
+  --text-2xl: 3rem;
+  --text-3xl: 5rem;
+
+  /* ===== Плавность (easing) ===== */
+  --ease-smooth: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-soft: cubic-bezier(0.4, 0, 0.2, 1);
+}

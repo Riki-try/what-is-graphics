@@ -1,0 +1,67 @@
+/* src/styles/main.css */
+
+@import './variables.css';
+
+/* ===== Сброс стилей браузера ===== */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  background: var(--bg-deep);
+  color: var(--text-main);
+  line-height: 1.6;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ===== Типографика ===== */
+h1, h2, h3 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+h1 { font-size: var(--text-3xl); }
+h2 { font-size: var(--text-2xl); }
+h3 { font-size: var(--text-xl); }
+
+/* ===== Утилиты ===== */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--space-md);
+  width: 100%;
+}
+
+/* ===== Сцены ===== */
+.scene {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: var(--space-lg) 0;
+}
+/* ===== Прелоадер ===== */
+.preloader__text {
+  font-family: var(--font-display);
+  font-size: var(--text-xl);
+  color: var(--text-muted);
+  letter-spacing: 0.1em;
+  text-align: center;
+  animation: preloader-pulse 2s var(--ease-smooth) infinite;
+}
+
+@keyframes preloader-pulse {
+  0%, 100% { opacity: 0.5; }
+  50%      { opacity: 1; }
+}
